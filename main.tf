@@ -11,6 +11,6 @@ terraform {
 }
 
 resource "aws_s3_bucket" "s3_tf" {
-  bucket  =   "ju-super-bucket"
+  bucket = "ju-super-bucket"
 }
 
