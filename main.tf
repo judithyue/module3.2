@@ -3,15 +3,16 @@ provider "aws" {
 }
 
 terraform {
+  required_version = ">= 1.0"
   backend "s3" {
     bucket = "sctp-ce12-tfstate-bucket"
     key    = "ju-terraform.tfstate"
     region = "ap-southeast-1"
   }
-    required_providers {
+  required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 5.0" 
+      version = "~> 5.0"
     }
   }
 }
