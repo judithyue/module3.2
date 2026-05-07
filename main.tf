@@ -24,10 +24,10 @@ resource "aws_s3_bucket" "s3_tf" {
   # checkov:skip=CKV_AWS_18:Lab environment - logging not required
   # checkov:skip=CKV_AWS_144:Lab environment - replication not required
   # checkov:skip=CKV_AWS_145:Lab environment - default encryption is sufficient
-  
+
   # CHANGE THIS LINE BELOW (Added the '2')
   # checkov:skip=CKV2_AWS_62:Lab environment - event notifications not required
-  
+
   # These are already working perfectly:
   # checkov:skip=CKV2_AWS_6:Lab environment - public access block managed manually or not needed
   # checkov:skip=CKV2_AWS_61:Lab environment - lifecycle policy not required
