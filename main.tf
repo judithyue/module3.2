@@ -8,9 +8,14 @@ terraform {
     key    = "ju-terraform.tfstate"
     region = "ap-southeast-1"
   }
+    required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 5.0" 
+    }
+  }
 }
 
 resource "aws_s3_bucket" "s3_tf" {
   bucket = "ju-super-bucket"
 }
-
